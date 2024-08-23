@@ -24,7 +24,7 @@ public class MemberService {
         return new MemberSaveResponseDto(savedMember.getId(),savedMember.getName());
     }
 
-    public List<MemberSimpleResponseDto> getNumbers(){
+    public List<MemberSimpleResponseDto> getMembers(){
         List<Member> memberList = memberRepository.findAll();
 
         List<MemberSimpleResponseDto> dtoList = new ArrayList<>();
